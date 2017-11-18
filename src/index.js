@@ -2,6 +2,8 @@ import _ from 'lodash'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import YTSearch from 'youtube-api-search'
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 
@@ -16,7 +18,7 @@ import DrawerRight from "./components/drawer_right"
 const API_KEY = 'AIzaSyAmMqGG8Pah26gX4ii70-41O8gOUDayFUU'
 
 const Menu = () => (
-    <MuiThemeProvider>
+    <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <MenuBar/>
     </MuiThemeProvider>
 )
