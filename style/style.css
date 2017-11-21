@@ -26,3 +26,17 @@
 .list-group-item:hover {
     background-color: #eee;
 }
+
+/*spotify styling*/
+body {
+    padding: 20px;
+}
+
+#search-form, .form-control {
+    margin-bottom: 20px;
+}
+
+.cover {
+    width: 300px;
+    height: 300px;
+}
